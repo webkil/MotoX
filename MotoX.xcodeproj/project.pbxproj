@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A3955291AF3D45B00262D9F /* Ajout_moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3955281AF3D45B00262D9F /* Ajout_moto.swift */; };
 		9A456A671AF2C416006EB3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A456A661AF2C416006EB3E0 /* AppDelegate.swift */; };
 		9A456A6A1AF2C416006EB3E0 /* MotoX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A456A681AF2C416006EB3E0 /* MotoX.xcdatamodeld */; };
 		9A456A6C1AF2C416006EB3E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A456A6B1AF2C416006EB3E0 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A3955281AF3D45B00262D9F /* Ajout_moto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ajout_moto.swift; sourceTree = "<group>"; };
 		9A456A611AF2C416006EB3E0 /* MotoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A456A651AF2C416006EB3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A456A661AF2C416006EB3E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,9 +60,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A39552A1AF3D47000262D9F /* Controle_vue */ = {
+			isa = PBXGroup;
+			children = (
+				9A3955281AF3D45B00262D9F /* Ajout_moto.swift */,
+				9A456A6B1AF2C416006EB3E0 /* ViewController.swift */,
+			);
+			name = Controle_vue;
+			path = MotoX;
+			sourceTree = "<group>";
+		};
+		9A39552B1AF3D49C00262D9F /* Base_de_donnees */ = {
+			isa = PBXGroup;
+			children = (
+				9A456A681AF2C416006EB3E0 /* MotoX.xcdatamodeld */,
+			);
+			name = Base_de_donnees;
+			sourceTree = "<group>";
+		};
 		9A456A581AF2C416006EB3E0 = {
 			isa = PBXGroup;
 			children = (
+				9A39552B1AF3D49C00262D9F /* Base_de_donnees */,
+				9A39552A1AF3D47000262D9F /* Controle_vue */,
 				9A456A631AF2C416006EB3E0 /* MotoX */,
 				9A456A7C1AF2C417006EB3E0 /* MotoXTests */,
 				9A456A621AF2C416006EB3E0 /* Products */,
@@ -80,11 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				9A456A661AF2C416006EB3E0 /* AppDelegate.swift */,
-				9A456A6B1AF2C416006EB3E0 /* ViewController.swift */,
 				9A456A6D1AF2C416006EB3E0 /* Main.storyboard */,
 				9A456A701AF2C416006EB3E0 /* Images.xcassets */,
 				9A456A721AF2C416006EB3E0 /* LaunchScreen.xib */,
-				9A456A681AF2C416006EB3E0 /* MotoX.xcdatamodeld */,
 				9A456A641AF2C416006EB3E0 /* Supporting Files */,
 			);
 			path = MotoX;
@@ -164,6 +184,7 @@
 				TargetAttributes = {
 					9A456A601AF2C416006EB3E0 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = FTTQZMR3W3;
 					};
 					9A456A781AF2C417006EB3E0 = {
 						CreatedOnToolsVersion = 6.4;
@@ -215,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A3955291AF3D45B00262D9F /* Ajout_moto.swift in Sources */,
 				9A456A6C1AF2C416006EB3E0 /* ViewController.swift in Sources */,
 				9A456A671AF2C416006EB3E0 /* AppDelegate.swift in Sources */,
 				9A456A6A1AF2C416006EB3E0 /* MotoX.xcdatamodeld in Sources */,
@@ -344,7 +366,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MotoX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,7 +378,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MotoX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,6 +439,7 @@
 				9A456A851AF2C417006EB3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A456A861AF2C417006EB3E0 /* Build configuration list for PBXNativeTarget "MotoXTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +448,7 @@
 				9A456A881AF2C417006EB3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -431,7 +459,8 @@
 				9A456A691AF2C416006EB3E0 /* MotoX.xcdatamodel */,
 			);
 			currentVersion = 9A456A691AF2C416006EB3E0 /* MotoX.xcdatamodel */;
-			path = MotoX.xcdatamodeld;
+			name = MotoX.xcdatamodeld;
+			path = MotoX/MotoX.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
