@@ -11,8 +11,37 @@ import CoreData
 
 class ViewController: UIViewController {
 
+    let managedObjectContext =
+    (UIApplication.sharedApplication().delegate
+        as! AppDelegate).managedObjectContext
+
+    
+    
+    
+    @IBOutlet var MarqueLabel: UILabel!
+    @IBOutlet var ModelLabel: UILabel!
+    @IBOutlet var CylindreeLabel: UILabel!
+    @IBOutlet var KilometrageLabel: UILabel!
+
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        //essayer de récupérer un élément de la base de données....
+     //   let entityDescription =
+     //   NSEntityDescription.entityForName("Motos",
+     //       inManagedObjectContext: managedObjectContext!)
+        
+      //  let request = NSFetchRequest()
+       // request.entity = entityDescription
+        
+      //  let pred = NSPredicate(format: <#String#>, <#args: CVarArgType#>...)
+        
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

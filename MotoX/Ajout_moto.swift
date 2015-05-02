@@ -44,8 +44,6 @@ class Ajout_moto: UIViewController {
     }
     
     func save (AnyObject){
-        
-
         let entityDescription =
         NSEntityDescription.entityForName("Moto",
             inManagedObjectContext: managedObjectContext!)
@@ -53,13 +51,19 @@ class Ajout_moto: UIViewController {
    
         let moto = Moto(entity: entityDescription!,
             insertIntoManagedObjectContext: managedObjectContext)
+
+        
         
         moto.marque = marquetextfield.text
         moto.model = modeltextfield.text
         moto.cylindree = cylindreetextfield.text
         moto.kilometrage = kilometragetextfield.text
-        print(kilometragetextfield.text)
-        print(moto.objectID)
+        
+       // marquetextfield.text = match.valueForKey("name") as! String
+        println(NSManagedObject.indexOfAccessibilityElement(kilometragetextfield.text).description)
+   
+        println(moto.objectID)
+    
        // func hello ViewController.indexOfAccessibilityElement(moto.objectID)
       
     }
