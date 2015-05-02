@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14E11f" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Moto" representedClassName="MotoX.Moto" syncable="YES">
+        <attribute name="cylindree" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kilometrage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="marque" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Moto" positionX="-308" positionY="-1" width="128" height="103"/>
+    </elements>
 </model>
