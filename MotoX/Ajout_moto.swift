@@ -151,7 +151,10 @@ class Ajout_moto: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         {
         let contactImageData:NSData = UIImagePNGRepresentation(Image_view.image)
         
-            moto.photo = contactImageData}
+            moto.photo = contactImageData
+        println("imagesauvee")
+        }
+        
         else {
         ""
         }

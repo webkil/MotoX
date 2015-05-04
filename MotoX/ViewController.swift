@@ -17,46 +17,64 @@ class ViewController: UIViewController {
 
     
     
+    @IBOutlet var image: UIImageView!
     
     @IBOutlet var MarqueLabel: UILabel!
     @IBOutlet var ModelLabel: UILabel!
     @IBOutlet var CylindreeLabel: UILabel!
     @IBOutlet var KilometrageLabel: UILabel!
-    @IBOutlet var text1: UITextField!
+  
 
     
    
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        afficheMoto()
-       
+     //   super.viewDidLoad()
+        recherchemoto()
+        
      }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBOutlet var Moto_image: UIImageView!
     
+
     
     
     //creer une fonction pour afficher les motos
-    func afficheMoto() {
-        
+    func recherchemoto() {
         let entityDescription =
         NSEntityDescription.entityForName("Moto",
             inManagedObjectContext: managedObjectContext!)
-
-    
-        let test = Nsin
-    
-    
-    
+        
+        let request = NSFetchRequest()
+        request.entity = entityDescription
+        
+        let pred = NSPredicate(format: "(marque = %@)", "YamahaR1")
+        request.predicate = pred
+        
+        var error: NSError?
+        
+        var objects = managedObjectContext?.executeFetchRequest(request,
+            error: &error)
+        
+        if let results = objects {
+            
+            if results.count > 0 {
+                let match = results[0] as! NSManagedObject
+                
+                MarqueLabel.text = match.valueForKey("marque") as? String
+                ModelLabel.text = match.valueForKey("model") as? String
+                CylindreeLabel.text = match.valueForKey("cylindree") as? String
+                KilometrageLabel.text = match.valueForKey("kilometrage") as? String
+                image = match.valueForKey("photo") as? UIImageView
+                
+            } else {
+                ""
+            }
+        }
     }
-    
-    
 
 }
 

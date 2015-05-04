@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-@objc(Moto)
 class Moto: NSManagedObject {
 
     @NSManaged var cylindree: String
