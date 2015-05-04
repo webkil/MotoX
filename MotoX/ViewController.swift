@@ -31,13 +31,7 @@ class ViewController: UIViewController {
        
         //essayer de récupérer un élément de la base de données....
      //   let entityDescription =
-     //   NSEntityDescription.entityForName("Motos",
-     //       inManagedObjectContext: managedObjectContext!)
-        
-      //  let request = NSFetchRequest()
-       // request.entity = entityDescription
-        
-      //  let pred = NSPredicate(format: <#String#>, <#args: CVarArgType#>...)
+
         
         
         

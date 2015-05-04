@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class Ajout_moto: UIViewController {
+class Ajout_moto: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     let managedObjectContext =
     (UIApplication.sharedApplication().delegate
@@ -21,15 +21,24 @@ class Ajout_moto: UIViewController {
     @IBOutlet var cylindreetextfield: UITextField!
     @IBOutlet var SaveButton: UIButton!
     @IBOutlet var Precedent_button: UIButton!
+
+    @IBOutlet var Image_view: UIImageView!
+
+//Fonction presser
+    func longPress(sender:UILongPressGestureRecognizer!) {
+        
+        if (sender.state == UIGestureRecognizerState.Ended) {
+            println("Long press Ended");
+        } else if (sender.state == UIGestureRecognizerState.Began) {
+            println("Long press detected.");
+        }
+    }
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //griser le bouton à l'ouverture
-    //    SaveButton.titleLabel?.opaque = true
-        // Do any additional setup after loading the view.
-    }
+         }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -68,6 +77,6 @@ class Ajout_moto: UIViewController {
       
     }
     
-    
+   
     
 }
