@@ -5,8 +5,9 @@
         <attribute name="kilometrage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="marque" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Moto" positionX="-308" positionY="-1" width="128" height="103"/>
+        <element name="Moto" positionX="-308" positionY="-1" width="128" height="120"/>
     </elements>
 </model>

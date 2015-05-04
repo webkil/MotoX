@@ -22,28 +22,41 @@ class ViewController: UIViewController {
     @IBOutlet var ModelLabel: UILabel!
     @IBOutlet var CylindreeLabel: UILabel!
     @IBOutlet var KilometrageLabel: UILabel!
+    @IBOutlet var text1: UITextField!
 
     
    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        afficheMoto()
        
-        //essayer de récupérer un élément de la base de données....
-     //   let entityDescription =
-
-        
-        
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet var Moto_image: UIImageView!
+    
+    
+    
+    //creer une fonction pour afficher les motos
+    func afficheMoto() {
+        
+        let entityDescription =
+        NSEntityDescription.entityForName("Moto",
+            inManagedObjectContext: managedObjectContext!)
+
+    
+        let test = Nsin
+    
+    
+    
+    }
+    
+    
 
 }
 

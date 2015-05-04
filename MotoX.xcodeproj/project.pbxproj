@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9A3955291AF3D45B00262D9F /* Ajout_moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3955281AF3D45B00262D9F /* Ajout_moto.swift */; };
-		9A3955311AF5572200262D9F /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3955301AF5572200262D9F /* Moto.swift */; };
 		9A456A671AF2C416006EB3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A456A661AF2C416006EB3E0 /* AppDelegate.swift */; };
 		9A456A6A1AF2C416006EB3E0 /* MotoX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A456A681AF2C416006EB3E0 /* MotoX.xcdatamodeld */; };
 		9A456A6C1AF2C416006EB3E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A456A6B1AF2C416006EB3E0 /* ViewController.swift */; };
@@ -16,6 +15,7 @@
 		9A456A711AF2C416006EB3E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A456A701AF2C416006EB3E0 /* Images.xcassets */; };
 		9A456A741AF2C416006EB3E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A456A721AF2C416006EB3E0 /* LaunchScreen.xib */; };
 		9A456A801AF2C417006EB3E0 /* MotoXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A456A7F1AF2C417006EB3E0 /* MotoXTests.swift */; };
+		9AE528D91AF7E9E10017D7CC /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE528D81AF7E9E10017D7CC /* Moto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		9A3955281AF3D45B00262D9F /* Ajout_moto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ajout_moto.swift; sourceTree = "<group>"; };
-		9A3955301AF5572200262D9F /* Moto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moto.swift; sourceTree = "<group>"; };
 		9A456A611AF2C416006EB3E0 /* MotoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A456A651AF2C416006EB3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A456A661AF2C416006EB3E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		9A456A791AF2C417006EB3E0 /* MotoXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotoXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A456A7E1AF2C417006EB3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A456A7F1AF2C417006EB3E0 /* MotoXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoXTests.swift; sourceTree = "<group>"; };
+		9AE528D81AF7E9E10017D7CC /* Moto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 		9A39552B1AF3D49C00262D9F /* Base_de_donnees */ = {
 			isa = PBXGroup;
 			children = (
-				9A3955301AF5572200262D9F /* Moto.swift */,
+				9AE528D81AF7E9E10017D7CC /* Moto.swift */,
 				9A456A681AF2C416006EB3E0 /* MotoX.xcdatamodeld */,
 			);
 			name = Base_de_donnees;
@@ -239,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A3955311AF5572200262D9F /* Moto.swift in Sources */,
+				9AE528D91AF7E9E10017D7CC /* Moto.swift in Sources */,
 				9A3955291AF3D45B00262D9F /* Ajout_moto.swift in Sources */,
 				9A456A6C1AF2C416006EB3E0 /* ViewController.swift in Sources */,
 				9A456A671AF2C416006EB3E0 /* AppDelegate.swift in Sources */,
