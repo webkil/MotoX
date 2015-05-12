@@ -68,7 +68,11 @@ class ViewController: UIViewController {
                 ModelLabel.text = match.valueForKey("model") as? String
                 CylindreeLabel.text = match.valueForKey("cylindree") as? String
                 KilometrageLabel.text = match.valueForKey("kilometrage") as? String
-                image = match.valueForKey("photo") as? UIImageView
+                
+                let profileImage:UIImage = UIImage(data: moto.photo)!
+                
+                
+                image = profileImage
                 
             } else {
                 ""

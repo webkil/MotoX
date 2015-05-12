@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A2169C97-61B4-4E77-90B2-53C08DA0822A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>MotoX</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>2BBC0DA925E397051A75B1ABC134747389514901</key>
 		<string>https://github.com/webkil/MotoX.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MotoX.xcodeproj/project.xcworkspace</string>
+	<string>MotoX.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2BBC0DA925E397051A75B1ABC134747389514901</key>

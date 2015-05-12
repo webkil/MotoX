@@ -123,6 +123,8 @@ class Ajout_moto: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         
     }
     
+
+    
     func save (AnyObject){
        
         let entityDescription =
